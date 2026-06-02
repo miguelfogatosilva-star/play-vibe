@@ -1,0 +1,32 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    background: linear-gradient( #0f0c29, #7c7cd3, #24243e);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+}
+
+.cardshome {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .cardhome {
+    background: #091a3d;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #2c2c2c;          
+  }
+
+.imagem {
+border-radius: 20px;
+}

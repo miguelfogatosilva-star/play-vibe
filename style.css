@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient( #0f0c29, #7c7cd3, #24243e);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .left h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  
+  .left p {
+    color: #b3b3b3;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    background: #091a3d;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #2c2c2c;
+    
+  }
+  
+  
+  
+  .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+  
+  .login-box {
+    background: #091a3d;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid #2c2c2c;
+  }
+  
+  .login-box h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input {
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    background: #111;
+    color: white;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #7c3aed;
+  }
+  
+  button {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #320c74;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    
+    
+  }
+
+  button:hover{
+    background-color: #3b3198;
+    opacity: 1;
+  }
+  
+  
+  
+  .create {
+    background: #2c2c2c;
+  }
+  
+  
+  
+  .trending {
+    margin-top: 30px;
+    background: #111;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .trending h3 {
+    margin-bottom: 15px;
+  }
+  
+  .trending ul {
+    list-style: none;
+  }
+  
+  .trending li {
+    margin-bottom: 10px;
+    color: #cfcfcf;
+  }
+  
+  .home {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .home h1 {
+    margin-bottom: 10px;
+  }
+  
+  .home p {
+    margin-bottom: 20px;
+    color: #cfcfcf;
+  }
+  
+  .post {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #3c3a3a;
+  }
+  
+  .post h2 {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 900px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .left h1 {
+      font-size: 40px;
+    }
+  
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }

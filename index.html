@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Play Vibe</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="left">
+      <div class="logo">
+        <div class="logoid"></div>
+        <img src="RO8WZ.jpg" alt="Logo" width="100px"> 
+        <h1>Play Vibe</h1>
+      </div>
+      <p>
+        Um site simples para jogadores conversarem, postarem fotos e encontrarem amigos para jogar.
+      </p>
+
+      <div class="card">
+        <div class="card">
+          <h2>Perfis</h2>
+          <p>Mostre seus jogos favoritos e conquistas.</p>
+        </div>
+
+        <div class="card">
+          <h2>Squads</h2>
+          <p>Monte equipes e jogue com amigos.</p>
+        </div>
+
+        <div class="card">
+          <h2>Posts</h2>
+          <p>Compartilhe prints e clips épicos.</p>
+        </div>
+
+        <div class="card">
+          <h2>Chat</h2>
+          <p>Converse em tempo real com gamers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-box">
+      <h2>Login</h2>
+
+      <form onsubmit="login(event)">
+        <input type="email" id="email" placeholder="Digite seu email">
+        <input type="password" id="senha" placeholder="Digite sua senha">
+
+        <button type="submit">Entrar</button>
+        <button type="button" class="create">Criar Conta</button>
+      </form>
+
+      <div class="trending">
+        <h3>Jogos populares</h3>
+        <ul>
+          <li>Minecraft</li>
+          <li>GTA VI</li>
+          <li>Valorant</li>
+          <li>Fortnite</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function login(event) {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
+
+      if(email === 'admin@gmail.com' && senha === '1234') {
+        alert('Login realizado com sucesso');
+        window.location.href = 'home.html';
+      } else {
+        alert('Email ou senha incorretos');
+      }
+    }
+  </script>
+
+</body>
+</html>
