@@ -28,5 +28,17 @@ body {
   }
 
 .imagem {
-border-radius: 20px;
+  padding: 20px;
+  border-radius: 20px;
 }
+
+.imagem2 {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: right;
+  
+
+}
+
+
+
