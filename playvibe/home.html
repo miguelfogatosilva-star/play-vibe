@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Vibe</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <img src="RO8WZ.jpg" class="logo">
+
+    <h1>Play Vibe</h1>
+
+    <h2>Tipos de Jogos</h2>
+
+    <div class="jogos">
+        <div class="caixa">
+            <h3>Jogos de RPG</h3>
+            <p>Elden Ring, The Witcher 3 e Genshin Impact.</p>
+        </div>
+
+        <div class="caixa">
+            <h3>Jogos de Aventura</h3>
+            <p>Red Dead Redemption 2, Zelda, Minecraft e GTA VI</p>
+        </div>
+
+        <div class="caixa">
+            <h3>Jogos de FPS</h3>
+            <p>CS2, Valorant e Rainbow Six.</p>
+        </div>
+
+        <div class="caixa">
+            <h3>Battle Royale</h3>
+            <p>Fortnite, Free Fire, PUBG e Warzone.</p>
+        </div>
+    </div>
+
+    <div class="imagens">
+        <img src="red-dead-redemption-2-full-hd-a242sno6kwo4mr52.jpg" onclick="abrirImagem(this)">
+        <img src="thumb-1920-1214925.jpg" onclick="abrirImagem(this)">
+        <img src="1465207-counter-strike-hd-wallpapers-1920x1080-smartphone.jpg" onclick="abrirImagem(this)">
+        <img src="fortnite-1920x1080-hd-cvavgntkwzkn72rg.jpg" onclick="abrirImagem(this)">
+    </div>
+
+    <div id="janela" class="janela">
+        <img id="fotoGrande">
+    </div>
+
+    <h1>Comentários</h1>
+
+<div class="comentarios">
+    <textarea id="comentario" placeholder="Escreva seu comentário aqui..."></textarea>
+
+    <button onclick="adicionarComentario()">
+        Enviar
+    </button>
+
+    <div id="listaComentarios"></div>
+</div>
+
+    <script src="home.js"></script>
+
+    <h1>Sobre o Site</h1>
+    <p>O Play Vibe é um site criado para apresentar diferentes estilos de jogos e ajudar os jogadores a
+      conhecerem novos títulos. Aqui você encontra informações sobre categorias populares como RPG,
+      aventura, FPS e Battle Royale, além de imagens dos jogos mais conhecidos de cada gênero.
+    </p>
+</body>
+</html>

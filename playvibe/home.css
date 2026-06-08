@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#080830,#7777d8);
+    color:white;
+}
+
+head{
+    text-align:center;
+    padding:30px;
+}
+
+.logo{
+    width:300px;
+    top:20px;
+    left:20px;
+}
+
+h1{
+    text-align: center;
+    font-size:60px;
+    text-shadow:3px 3px 10px black;
+}
+
+h2{
+    text-align: center;
+    margin:40px 0;
+    font-size:40px;
+}
+
+h3{
+    font-size:50px ;
+    text-shadow:3px 3px 10px black;
+}
+
+p{
+    font-size:30px ;
+    text-shadow:3px 3px 10px black;
+}
+
+.jogos{
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.caixa{
+    background:#00174a;
+    padding:100px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+.imagens{
+    width:80%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    justify-items:center;
+}
+
+.imagens img{
+    width:450px;
+    height:260px;
+    border-radius:15px;
+    cursor:pointer;
+    object-fit:cover;
+    box-shadow:0 0 15px rgba(0,0,0,0.6);
+}
+
+.janela{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+}
+
+.janela img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+}
+
+.comentarios{
+    width:80%;
+    margin:40px auto;
+    text-align:center;
+}
+
+#comentario{
+    width:100%;
+    height:120px;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    resize:none;
+    font-size:16px;
+}
+
+.comentarios button{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.comentario{
+    background:#00174a;
+    margin-top:15px;
+    padding:15px;
+    border-radius:10px;
+    text-align:left;
+}
