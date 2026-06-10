@@ -9,7 +9,7 @@ $usuario = "root";
 $senha = "";
 $banco = "playvibe";
 
-$conexao = mysqli_connect($host, $usuario, $senha, $banco);
+$conexao = mysqli_connect($host, $id, $login, $senha, $banco);
 
 if (!$conexao) {
     die("Erro na conexão: " . mysqli_connect_error());
